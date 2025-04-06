@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-container">
+          <a href="index.html"><h1>Real Estate</h1></a>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-menu">
+            <li class="has-submenu">
+              <a>Buy</a>
+              <ul class="submenu">
+                <li><a href="./buySection/apartments.html">Apartments</a></li>
+                <li><a href="./buySection/houses.html">Houses</a></li>
+                <li><a href="#">Land</a></li>
+              </ul>
+            </li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." class="search-input" />
+          <button class="search-button" aria-label="Search">
+            <img src="images/icons/lup.png" alt="Search" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="gallery">
+      <div class="container">
+        <a href=""><img src="./images/gallery/gallery1.jpg" /></a>
+        <a href=""><img src="./images/gallery/gallery2.jpg" /></a>
+        <a href=""><img src="./images/gallery/gallery3.jpg" /></a>
+        <a href=""><img src="./images/gallery/gallery4.jpg" /></a>
+        <a href=""><img src="./images/gallery/gallery5.jpg" /></a>
+        <a href=""><img src="./images/gallery/gallery6.jpg" /></a>
+        <a href=""><img src="./images/gallery/gallery7.jpg" /></a>
+        <a href=""><img src="./images/gallery/gallery8.jpg" /></a>
+        <a href=""><img src="./images/gallery/gallery9.jpg" /></a>
+        <a href=""><img src="./images/gallery/gallery10.jpg" /></a>
+      </div>
+    </div>
+    <footer data-searchable>
+      <div class="container">
+        <div class="brand-col">
+          <h2>Real Estate</h2>
+        </div>
+        <div class="location-col">
+          <h3>location</h3>
+          <p>ul. Pomorska 49</p>
+          <p>50-217 Wrocław</p>
+        </div>
+        <div class="contact-col">
+          <h3>Contact</h3>
+          <p>+48 123 456 789</p>
+          <p>email: realestate@email.com</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../js/handleSearch.js"></script>
+  </body>
+</html>

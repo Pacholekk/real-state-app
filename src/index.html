@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-container">
+          <a href="index.html"><h1>Real Estate</h1></a>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-menu">
+            <li class="has-submenu">
+              <a>Buy</a>
+              <ul class="submenu">
+                <li><a href="./buySection/apartments.html">Apartments</a></li>
+                <li><a href="./buySection/houses.html">Houses</a></li>
+                <li><a href="#">Land</a></li>
+              </ul>
+            </li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." class="search-input" />
+          <button class="search-button" aria-label="Search">
+            <img src="images/icons/lup.png" alt="Search" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="image-slider" id="image-slider">
+      <div class="slider-container">
+        <div class="slide active">
+          <img src="images/houses/estate1.jpg" alt="Modern house exterior" />
+          <div class="slider-content" data-searchable>
+            <h2>Find your dream house</h2>
+            <p>Explore best estates in the World</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="images/apartments/apart1.jpg"
+            alt="Luxury apartment interior"
+          />
+          <div class="slider-content" data-searchable>
+            <h2>Luxury apartments</h2>
+            <p>Discover exclusive living spaces</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/lands/land1.jpg" alt="Commercial land" />
+          <div class="slider-content" data-searchable>
+            <h2>Building Land Opportunities</h2>
+            <p>Ideal plots for your dream project</p>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <button
+            class="prev-btn"
+            aria-label="Previous slide"
+            aria-controls="image-slider"
+          >
+            <
+          </button>
+          <button
+            class="next-btn"
+            aria-label="Next slide"
+            aria-controls="image-slider"
+          >
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="category-blocks">
+      <div class="container">
+        <div class="category-block" data-searchable>
+          <div class="icon-wrapper">
+            <img src="images/icons/houseSVG.png" alt="Sales icon" />
+          </div>
+          <h3>Sales</h3>
+          <p>
+            Find your perfect property with our extensive selection of homes,
+            apartments, and land for sale.
+          </p>
+        </div>
+        <div class="category-block">
+          <div class="icon-wrapper">
+            <img src="images/icons/development.jpeg" alt="Development icon" />
+          </div>
+          <h3>Developments</h3>
+          <p>
+            Explore our latest development projects in prime locations across
+            Wrocław.
+          </p>
+        </div>
+        <div class="category-block">
+          <div class="icon-wrapper">
+            <img src="images/icons/location-point.svg" alt="About us icon" />
+          </div>
+          <h3>About Us</h3>
+          <p>
+            With over 15 years of experience in the Wrocław property market, our
+            dedicated team will help you find the perfect property.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer data-searchable>
+      <div class="container">
+        <div class="brand-col">
+          <h2>Real Estate</h2>
+        </div>
+        <div class="location-col">
+          <h3>Location</h3>
+          <p>ul. Pomorska 49</p>
+          <p>50-217 Wrocław</p>
+        </div>
+        <div class="contact-col">
+          <h3>Contact</h3>
+          <p>+48 123 456 789</p>
+          <p>email: realestate@email.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/handleClick.js"></script>
+    <script type="module" src="js/handleSlider.js"></script>
+    <script type="module" src="../js/handleSearch.js"></script>
+  </body>
+</html>

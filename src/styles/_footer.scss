@@ -1,0 +1,40 @@
+footer {
+    margin-top: auto;
+    background-color: grey;
+    padding: 40px 20px; 
+    width: 100%;
+    box-sizing: border-box; 
+    
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      
+      & > *:nth-child(2) {
+        margin-left: 5rem;
+      }
+    }
+    
+    .brand-col {
+      h2 {
+        margin: 0;
+        color: black;
+      }
+    }
+    
+    .location-col, .contact-col {
+      h3 {
+        color: black;
+        margin-top: 0;
+        margin-bottom: 15px;
+        margin-left: 0; 
+      }
+      
+      p {
+        color: black;
+        margin-left: 0; 
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+  }

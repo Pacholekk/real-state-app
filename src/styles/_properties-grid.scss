@@ -1,0 +1,128 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.properties-section {
+    padding: 60px 0;
+    background-color: v.$background-color; 
+  
+    .container {
+      max-width: 1920px; 
+      
+      @include m.tablet-and-below {
+        padding: 0 20px;
+      }
+      
+      @include m.mobile {
+        padding: 0 15px;
+      }
+    }
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: v.$dark-color;
+      font-size: 2.5rem;
+      position: relative;
+  
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background-color: v.$dark-color;
+      }
+      
+      @include m.tablet {
+        font-size: 2.2rem;
+        margin-bottom: 35px;
+      }
+      
+      @include m.mobile {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+    }
+    
+
+    @media (max-width: 480px) {
+      padding: 40px 0;
+      
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    @include m.tablet {
+      padding: 50px 0;
+    }
+    
+    @include m.mobile {
+      padding: 40px 0;
+    }
+}
+  
+.properties-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    
+  
+    
+    @include m.tablet {
+      gap: 20px;
+      
+   w
+      .property-card {
+        width: calc(50% - 10px); 
+      }
+    }
+    
+    @include m.mobile {
+      gap: 15px;
+      justify-content: center;
+      
+
+      .property-card {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+}
+
+
+.show-more-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 24px;
+    background-color: v.$primary-color;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  
+    
+    @include m.mobile {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px 20px;
+    }
+}
+
+
+.no-results {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: v.$light-color;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    color: v.$dark-color;
+    margin: 20px 0;
+}

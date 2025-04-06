@@ -1,0 +1,136 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+
+  
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  min-width: 180px;
+  padding: 10px 0;
+  display: none;
+  
+  &.show {
+    display: block;
+  }
+  
+  &[hidden] {
+    display: none;
+  }
+}
+
+
+
+.sort-menu {
+  top: 100%;
+  left: 0;
+  margin-top: 5px;
+}
+
+.sort-menu .menu-item {
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sort-menu .menu-item:hover {
+  background-color: #f4f4f4;
+}
+
+.sort-menu .menu-item.active {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.filter-controls {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.sort-filter-buttons {
+  display: flex;
+  position: relative;
+  gap: 10px;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 10px;
+
+}
+
+.control-btn {
+  @include m.button-base;
+  display: flex;
+  margin-left: auto;
+  position: relative;
+  
+  img {
+    width: 24px; 
+    height: 24px;
+  }
+
+}
+.filter-menu {
+  top: 100%;
+  right: 0;
+  margin-top: 5px;
+  width: 250px;
+  padding: 15px;
+}
+
+.filter-section {
+  margin-bottom: 15px;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: v.$dark-color;
+  }
+
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    
+    &:focus {
+      outline: none;
+      border-color: black;
+    }
+  }
+}
+
+.filter-btns {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.filter-btn {
+  @include m.button-base;
+  padding: 8px 16px;
+  background-color: v.$dark-color;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  flex: 1;
+  
+  &:hover {
+    background-color: v.$hover-color;
+  }
+  
+  &.reset {
+    background-color: #6c757d;
+    
+    &:hover {
+      background-color: #5a6268;
+    }
+  }
+}

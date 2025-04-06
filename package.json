@@ -1,0 +1,24 @@
+{
+  "name": "capstone-project-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass --watch src/scss:src/css",
+    "dev": "vite",
+    "build":"vite build",
+    "serve":"vite preview"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@autocode.git.epam.com:patryk.pacholski2001/capstone-project-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.86.0"
+  }
+}
